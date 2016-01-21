@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    //$( "#datepicker" ).datepicker();
+  });
+  </script>
+ <!-- jQuery CDN link....  
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	 -->
+		<meta charset="UTF-8">	
+		<title>HTML5: Week One</title>  
+		<!-- link to an external style sheet (best practice with style sheet)-->
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body class="page"><!-- everything that is visual goes in the body tag  -->
+		<header>
+			<!-- the "banner" area or title of the page-->
+			<h1>HTML5: Week One</h1> <!-- only h1 per page (for SEO purposes) --> 	
+		</header>
+		<nav class="nav1"> 
+			<ul>
+				<!-- these links are relative paths -->
+				<li> <a href="#">home</a></li>
+				<li> <a href="#">gallery</a></li>
+				<li> <a href="sign-up.html">Sign Up Here</a></li>
+				<li> <a href="#">Mobile Site</a></li>
+				<li> <a href="http://www.google.com">Google</a></li>
+			</ul>
+		</nav>
+		<div id="mainContent">
+            <h3>Join up with other snow lovers. We'll match you with the perfect companions for the perfect day on the hill.</h3>
+			<!-- A Simple Form    -->
+            <form id="sign-up" method="post" action="#">
+              <fieldset>
+                <h2>Sign up to connect with other riders in the best conditions!</h2>
+                <ul>
+                  <li>
+                    <label id="f-name-label">First name</label>
+                    <input type="text" name="first-name" id="f-name-label" placeholder="First name" required />
+                  </li>
+                  <li>
+                    <label id="l-name-label">Last name</label>
+                    <input type="text" name="last-name" id="l-name-label" placeholder="Last name" required />
+                  </li>
+                  <li>
+                    <label id="email">Email address</label>
+                    <input type="email" name="email-address" id="email" placeholder="Email address" required />
+                  </li>
+                  <li>
+                    <label id="username">Choose a user name</label>
+                    <input type="text" name="user-name" id="username" placeholder="User name" required />
+                  </li>
+                  
+                  <li>
+                    <label id="gear">What do you ride?</label>
+                    <select name="gear" required>
+                      <option value="">Choose your gear</option>
+                      <option value="fixed-skis">Fixed-heel skis</option>
+                      <option value="snowboard">Snowboard</option>
+                      <option value="tele-skis">Telemark skis</option>
+                    </select>
+                  </li>
+                  <li>
+                    <label id="skill">What is your skill level?</label>
+                    <select name="skill" required>
+                      <option value="">Choose your skill level</option>
+                      <option value="bunny">Bunny hill bandit</option>
+                      <option value="blue-1">Blue-curious</option>
+                      <option value="blue-2">Boldly blue</option>
+                      <option value="black-1">Black-diamond bounder</option>
+                      <option value="black-2">Double-diamond death-wish</option>
+                    </select>
+                  </li>
+                  <li>
+                    <label id="terrain">What is your favorite terrain?</label>
+                    <select name="terrain" required>
+                      <option value="">Choose your terrain</option>
+                      <option value="groomers">Cruising groomers</option>
+                      <option value="park">The park, bro</option>
+                      <option value="downhill">Big-mountain powder!</option>
+                    </select>
+                  </li>
+                  <li>
+                    <label>Where do you live?</label>
+                    <input type="text" placeholder="Enter ZIP" pattern="[0-9]{5}" required/>
+                  </li>
+                  <li>
+                    <label id="distance">How far will you travel?</label>
+                    <input type="number" max="300" min="1" required /> miles
+                  </li>
+                  <li>
+                    <label>What does your perfect crew look like? (choose all that apply)</label>
+                    <ul>
+                      <li>
+                        <input type="checkbox" name="riders" value="solo"/> No friends on a powder day
+                      </li>
+                      <li>
+                        <input type="checkbox" name="riders" value="two-of-us"/> Just the two of us
+                      </li>
+                      <li>
+                        <input type="checkbox" name="riders" value="small-group"/> One chair of friends is perfect
+                      </li>
+                      <li>
+                        <input type="checkbox" name="riders" value="biggest"/> Party time! The more the merrier!
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <label>Can you drive?</label>
+                    <ul>
+                      <li>
+                        <input type="radio" name="car" value="car-yes" required> Yes! Hop in!
+                      </li>
+                      <li>
+                        <input type="radio" name="car" value="car-yes-but"> Yes, but only if you skids pay for gas
+                      </li>
+                      <li>
+                        <input type="radio" name="car" value="car-no-but"> No, but I'll pitch in for gas
+                      </li>
+                      <li>
+                        <input type="radio" name="car" value="car-no" disabled> No, I'm a skid looking for a free ride
+                      </li>
+                    </ul>
+                  </li>
+                <input type="submit" name="submit" value="Send me alerts!" />
+              </ul>
+            </fieldset>
+          </form>
+        </div><!-- closing maincContent div tag -->
+        <!--  This is the footer section, only footer stuff -->
+		<footer>
+			<p>&copy; copyright 2015</p>
+		</footer>
+	</body>
+</html>
